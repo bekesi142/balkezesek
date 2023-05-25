@@ -11,7 +11,6 @@ List<string> utolso_lista = new List<string>();
 List<int> suly_lista = new List<int>();
 List<int> magassag_lista = new List<int>();
 
-
 int hanysorvan = 0;
 
 while (!sr.EndOfStream)
@@ -30,6 +29,8 @@ while (!sr.EndOfStream)
     suly_lista.Add(suly);
     
 }
+
+
 List<string> szukitett_lista = new List<string>();
 List<int> jodatum_index_lista = new List<int>();
 List<string> jonev_index_lista = new List<string>();
@@ -53,5 +54,18 @@ foreach (int index in jodatum_index_lista)
 }
 
 
+
 Console.WriteLine("3. feladat:  " + hanysorvan);
-Console.WriteLine("4. feladat:  " + szukitett_lista);
+
+Console.WriteLine("4. feladat:  " + jonev_index_lista + szukitett_lista);
+
+Console.WriteLine("5. feladat:  ");
+Console.Write("Kérek egy évszámot 1990 és 1999 között:  ");
+int bekeres = Convert.ToInt32(Console.ReadLine());
+while (bekeres > 1999 && bekeres < 1990)
+{
+    Console.Write("Hibás adat! Kérek egy évszámot 1990 és 1999 között:  ");
+    bekeres = Convert.ToInt32(Console.ReadLine());
+
+}
+
