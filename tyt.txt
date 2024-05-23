@@ -1,0 +1,2 @@
+https://github.com/progoktato/WPF_12BC_Dinamikus/blob/master/MainWindow.xaml.cs
+https://github.com/stigibalint/Operatorok/tree/master/Operatorok
